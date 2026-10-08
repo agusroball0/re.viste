@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root{
+    --primario: #3F4932;
+    --secundario: #F2EBDD;
+    --terciario: #C9BDA8;
+    --cuarto: #806653;
+}
+
+.img_fluida{
+    width: 100%;
+}
+
+
+/* HEADER */
+
+nav{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+.hide2{
+    display: none;
+}
+
+header{
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    border-bottom: 1.5px solid var(--terciario);
+}
+
+#logo{
+    width: 140px; 
+}
+
+#burger{
+    width: 50px; 
+}
+
+/* HERO */
+
+#hero{
+    background-image: url(img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 7em 3em;
+}
+
+h1{
+    color: var(--secundario);
+    font-family: "Cormorant", serif;
+    line-height: 0.9em;
+    font-size: 2.5em;
+}
+
+.prenda{
+    font-family: "Cormorant", serif;
+    font-size: 0.6em;
+    font-weight: lighter; 
+}
+
+.boton{
+    font-size: 0.9em;
+    color: var(--primario);
+    background-color: var(--secundario);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    margin: 2em;
+    padding: 0.5em 0.8em;
+    border-radius: 8px;
+}
+
+/* SECCIÓN 2*/
+
+#seccion2 {
+    background-color: var(--terciario);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 3em; 
+    gap: 2em; 
+}
+
+#seccion2 article {
+    width: 15vh;
+    text-align: center;
+}
+
+#seccion2 article img{
+    border-radius: 50%;
+}
+
+#seccion2 h2{
+    font-size: 1em;
+}
+
+#seccion2 p{
+    font-size: 0.8em;
+}
+
+#seccion2 div{
+    width: 60%;
+    background-color: #3F4932;
+    margin: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+#seccion2 div h2{
+    font-family: "Cormorant", serif;
+    color: var(--secundario);
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#seccion2 div p{
+    color: var(--terciario);
+}
+
+
+/* GRID */
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 40vh);
+}
+
+#txt_grid{
+    background-color: var(--terciario);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+#grid_img img{
+    object-fit: cover;
+}
+
+#grid h2{
+    font-family: "Cormorant", serif;
+    font-size: 2em;
+    padding: 0 1em;
+    margin-bottom: 0.4em;
+}
+
+#grid h3{
+    font-family: "Cormorant", serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#img_boton{
+    position: relative;    
+}
+
+#img_boton img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#grid .boton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+
+}
+
+/* SECCIÓN 4 */
+
+#seccion4{
+    padding: 3em 1.5em;
+}
+
+#seccion4 article{
+    margin-bottom: 3em;
+}
+
+.foto_card{
+    position: relative;
+    overflow: hidden;
+}
+
+.foto_card img{
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.foto_card h3{
+    position: absolute;
+    right: 0;
+    top: 25px;
+
+    background-color: var(--terciario);
+    
+    padding: 0.7em 1em;
+    font-size: 0.9em;
+}
+
+.foto_card:hover img {
+    transform: scale(1.05);
+}
+
+#seccion4 article h2{
+    margin-top: 0.5em;
+    font-size: 1.4em;   
+}
+
+#seccion4 article p {
+    margin-top: 0.3em;
+    line-height: 1.2;
+}
+
+#seccion4 article a {
+    display: inline-block;
+    
+    padding: 0.5em 0.7em;
+    margin-top: 0.8em;
+
+    color: var(--primario);
+    background-color: var(--terciario);
+    
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* FORMULARIO */
+
+#form{
+    background-color: var(--primario);
+    color: white;
+
+    padding: 3em 2em;
+    text-align: center;
+}
+
+#form h2{
+    color: white;
+    font-size: 1.7em;
+    font-weight: lighter;
+
+    padding: 0.8em 0;
+
+    text-align: center;
+}
+
+#form_fila {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+#form input[type="email"] {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    font-size: 1em;
+}
+
+#form input[type="submit"] {
+    background-color: var(--secundario);
+    color: var(--primario);
+    border: none;
+    padding: 1em 3em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form label {
+    display: flex;
+    align-items: first baseline;
+
+    gap: 0.5em;
+    margin-top: 1em;
+
+    text-align: left;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primario);
+    color: white;
+
+    height: 10vh;
+    padding: 1.5em;
+    border-top: 1px solid var(--terciario);
+}
+
+footer p{
+    text-align: left;
+    font-size: 0.7em;
+}
+
+#ig{
+    width: 30px;
+}
+
+#gm{
+    width: 40px;
+}
+
+#iconos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* MOBILE S Y M*/
+/* Agrego este para ajustar el h1 del Hero*/
+
+@media all and (max-width: 375px) {
+    #hero h1 {
+        font-size: 1.9rem;
+        line-height: 1.1;
+    }
+
+    footer{
+        padding: 0.8em;
+    }
+
+    footer p{
+        font-size: 0.6em;
+    }
+
+    footer img{
+        width: 1.5em;
+    }
+}
+
+/* TABLET */
+
+@media all and (min-width: 768px){
+
+    /* HEADER */
+    
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+    }
+
+    header nav img {
+        width: 1.8em;
+    }
+
+    #burger{
+        display: none;
+    }
+
+    /* HERO */
+
+    h1{
+        font-size: 3em;
+    }
+
+    .boton{
+        font-size: 1em;
+    }
+
+    /* SECCIÓN 2 */
+
+    .hide{
+        display: block;
+    }
+
+    #seccion2{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #seccion2 article{
+        width: 45%;
+        text-align: center;
+    }
+
+    #seccion2 article img {
+        width: 12em;
+    }
+
+    
+
+    /* GRID */
+
+    #grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 40vh);
+    }
+
+    #grid_img {
+        grid-column: span 2;
+        overflow: hidden;
+    }
+
+    #grid_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #grid_final {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        grid-column: span 2;
+        background-color: var(--secundario);
+        padding: 3em;
+    }
+
+    #grid_final h2{
+        padding: 0;
+    }
+
+    #grid_final a{
+        text-decoration: none;
+        color: var(--secundario);
+        background-color: var(--primario);
+        padding: 0.3em 1em;
+        border-radius: 10px;
+        margin-top: 1em;
+    }
+
+    #grid_final .hide h2, #grid_final .hide h3, #grid_final .hide p {
+        text-align: left;
+    }
+
+    /* SECCIÓN 4 */
+
+    #seccion4 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+    }
+
+    #seccion4 article {
+        width: 45%;
+    }
+
+    /* FORMULARIO */
+
+    #form_fila {
+        flex-direction: row;
+        gap: 1.5em;
+        align-items: stretch;
+    }
+
+    #form_fila input {
+        width: 65%;
+    }
+
+    #form_fila button {
+        width: 35%;
+    }
+
+    #form label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+    }   
+
+    /* FOOTER */
+
+    footer{
+        padding: 0 2em;
+    }
+
+    footer p{
+        font-size: 1em;
+    }
+
+    #ig{
+        width: 2.5em;
+    }
+
+    #gm{
+        width: 3em;
+    }
+}
+
+
+/*DESKTOP*/
+
+@media all and (min-width: 1200px){
+
+    /* HEADER */
+
+    #logo{
+        width: 10em;        
+    }
+
+    nav a{
+        font-size: 1.2em;
+    }
+
+    /* HERO */
+
+    h1{
+        font-size: 5em;
+    }
+
+    .boton{
+        font-size: 1.3em;
+    }
+
+    /* SECCIÓN 2 */
+
+     #seccion2 {
+        width: 80%;
+        margin: -6em auto 0;
+        padding: 5em 3em;
+        position: relative;
+    }
+
+    #seccion2 article {
+        width: 20%;
+        text-align: center;
+        padding: 0 1em;
+    }
+
+    #seccion2 article img {
+        width: 10em;
+        height: 10em;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    #seccion2 article h2{
+        margin-top: 0.5em;
+        font-size: 1.5em;
+
+    }
+
+    #seccion2 article p{
+        font-size: 1.2em;
+    }
+
+    #seccion2 div{
+        margin-bottom: 0.2em;
+    }
+
+    /* GRID */
+
+    #grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 40vh);
+        margin-top: 2em;
+    }
+
+    #grid_img {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    #grid #txt_grid {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #grid #img_boton {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #grid_final {
+        grid-column: 3 / 5;
+        grid-row: 1 / 3;
+
+        justify-content: center;
+        align-items: flex-start;
+        padding: 4em;
+    }
+
+    #grid h3 {
+        font-size: 1.3em;
+    }
+
+    #grid h2 {
+        font-size: 2.5em;
+    }
+
+    #grid p {
+        font-size: 1.2em;
+    }
+
+    
+
+    /* SECCIÓN 4 */
+
+    .hide2{
+        display: block;
+    }
+
+    #seccion4{
+        gap: 3.5em;
+    }
+
+    #seccion4 article {
+        width: 25%;
+    }
+
+    #seccion4 article h2{
+        font-size: 1.8em;
+    }
+
+    #seccion4 p{
+        font-size: 1.2em;
+    }
+
+    /* FORM */
+
+    #form {
+        padding: 7em 0;
+    }
+
+    #form form {
+        width: 55%;
+        margin: auto;
+    }
+
+    #form h2{
+        font-size: 3em;
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding: 4em;
+    }
+}
